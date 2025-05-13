@@ -1,2 +1,12 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_hospital_patient,access.hospital.patient,model_hospital_patient,,1,1,1,1
+access_hospital_appointment,access.hospital.appointment,model_hospital_appointment,,1,1,1,1
+access_hospital_medicine,access.hospital.medicine,model_hospital_medicine,,1,1,1,1
+access_hospital_doctor,access.hospital.doctor,model_hospital_doctor,,1,1,1,1
+access_hospital_admission,access.hospital.admission,model_hospital_admission,,1,1,1,1
+access_hospital_department,access.hospital.department,model_hospital_department,,1,1,1,1
+access_hospital_lab_test,access.hospital.lab.test,model_hospital_lab_test,,1,1,1,1
+access_hospital_medical_record,access.medical.record.test,model_hospital_medical_record,,1,1,1,1
+access_hospital_operation_room,access.medical.operation.room,model_hospital_operation_room,,1,1,1,1
+access_hospital_surgery,access.medical.surgery,model_hospital_surgery,,1,1,1,1
+access_hospital_invoice,access.medical.invoice,model_hospital_invoice,,1,1,1,1

@@ -8,7 +8,10 @@
     'license': 'LGPL-3',
     'data': [
         'security/ir.model.access.csv',
-        'views/patient_views.xml'
+        'views/patient_views.xml',
+        # 'views/appointment_views.xml',
+        'views/hospital_doctor_views.xml',
+        'views/admission_views.xml',
     ],
     'demo': [],
     'installable': True,

@@ -1,0 +1,55 @@
+<odoo>
+
+    <!-- Form View -->
+    <record id="view_hospital_admission_form" model="ir.ui.view">
+        <field name="name">hospital.admission.form</field>
+        <field name="model">hospital.admission</field>
+        <field name="arch" type="xml">
+            <form string="Student">
+                <sheet>
+                    <div calss="oe_title">
+                        <label for="patient_id"/>
+                        <h1>
+                            <field name="patient_id"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="General Info">
+                            <field name="admission_date"/>
+                            <field name="discharge_date"/>
+                        </group>
+                        <group string="Additional Info">
+                            <field name="room_number"/>
+                            <field name="reason"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Tree View -->
+    <record id="view_hospital_admission_tree" model="ir.ui.view">
+        <field name="name">hospital.admission.tree</field>
+        <field name="model">hospital.admission</field>
+        <field name="arch" type="xml">
+            <list string="admission">
+                <field name="patient_id"/>
+                <field name="admission_date"/>
+                <field name="discharge_date"/>
+            </list>
+        </field>
+    </record>
+    <!-- Action -->
+    <record id="action_hospital_admission" model="ir.actions.act_window">
+        <field name="name">admission</field>
+        <field name="res_model">hospital.admission</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem
+            id="menu_patient"
+            name="Admission"
+            parent="menu_hospital_management"
+            action="action_hospital_admission"/>
+</odoo>
